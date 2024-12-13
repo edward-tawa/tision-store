@@ -38,6 +38,7 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('accounts/', include('django.contrib.auth.urls')),
     #path('store/', include('carstore.urls.store_urls')),
     path('store/api/schema/', schema_view.with_ui('swagger', cache_timeout=0), name="swagger-ui"),
     path('store/api/schema/redoc/', schema_view.with_ui('redoc', cache_timeout=0), name="redoc-ui"),
