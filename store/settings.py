@@ -67,6 +67,8 @@ ROOT_URLCONF = 'store.urls'
 SWAGGER_SETTINGS = {
     "DEFAULT_INFO": "store.urls.api_info",
     "DEFAULT_AUTO_SCHEMA_CLASS": "drf_yasg.inspectors.SwaggerAutoSchema",
+    'LOGIN_URL': None,
+    'LOGOUT_URL': None,
 }
 
 TEMPLATES = [
