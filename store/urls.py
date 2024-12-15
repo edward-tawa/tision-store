@@ -22,7 +22,7 @@ from drf_yasg import openapi
 
 
 api_info = openapi.Info(
-    title="e-store",
+    title="tision-store",
     default_version="v1",
     description="API description",
     terms_of_service="",
